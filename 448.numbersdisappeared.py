@@ -9,5 +9,6 @@ class Solution:
     
 ''' 
 used set since it does not accept duplicates, used len as range and added one 
-for inclusivity, looped through the list, if item in set removed and we are left with what is not there, then cast the set back to a list
+for inclusivity, looped through the list, if item in set removed and we
+ are left with what is not there, then cast the set back to a list
 '''
