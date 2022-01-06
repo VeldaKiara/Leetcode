@@ -16,6 +16,7 @@ Input: nums = [-1,1,0,-3,3]
 Output: [0,0,9,0,0]
 
 '''
+#O(n) time, O(n) space
 class Solution:
     '''
     create var to loop through the array
@@ -29,7 +30,7 @@ class Solution:
         for i in range(len(nums)):
             products[i] *= leftCurrentProducts
             leftCurrentProducts *= nums[i]
-            
+
         rightCurrentProducts = 1
         for i in reversed(range(len(nums))):
             products[i] *= rightCurrentProducts
