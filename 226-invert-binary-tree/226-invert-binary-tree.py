@@ -7,6 +7,7 @@
 
 ''' 
 recursive approach
+#o(n) time / o(d) space, d for depth
 '''
 class Solution:
     def invertTree(self, root):
