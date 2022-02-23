@@ -19,8 +19,25 @@ class Solution:
         
         return root
     
-        
-        
+'''iterative approach
+#O(n) time / O(n) space
+
+'''
+
+class Solution:
+    def invertTree(self, root):       
+        queue = [root]
+        while len(queue):
+            current = queue.pop(0)
+            if current is None:
+                continue
+            current.left, current.right = current.right, current.left
+            queue.append(current.left)
+            queue.append(current.right)
+        return root
+            
+            
+            
         
         
         
