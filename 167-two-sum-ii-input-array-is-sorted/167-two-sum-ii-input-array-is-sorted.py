@@ -5,6 +5,7 @@ class Solution:
         #if less than, move the left pointer, if greater move the right, equal
         #is the target sum
         #return index of number that lead to target sum, they are based on one so add 1 to each of the pointers
+        #time 0(n) space(1)
         l, r = 0, len(numbers) - 1
         while l < r:
             sumNumbers = numbers[l] + numbers[r]
