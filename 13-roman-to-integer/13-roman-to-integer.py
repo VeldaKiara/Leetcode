@@ -7,6 +7,10 @@ L             50
 C             100
 D             500
 M             1000
+
+largest to smallest add them up,
+smaller before larger : substract smaller
+
 '''
 class Solution:
     def romanToInt(self, s: str):
