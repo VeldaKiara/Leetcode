@@ -5,7 +5,7 @@ array of primes for, index number will rep values of numbers
 sieve of Eratosthenes is an ancient algorithm for finding all prime numbers up to any given limit.
 It does so by iteratively marking as composite (i.e., not prime) the multiples of each prime, starting with the first prime number, 2.
 
-
+time n log n
 '''
 class Solution:
     def countPrimes(self, n: int) -> int:
@@ -27,9 +27,5 @@ class Solution:
                     temporary += i
                     
             i += 1
-        return sum(prime_numbers)
-            
-                
-        
-        
+        return sum(prime_numbers)  
         
