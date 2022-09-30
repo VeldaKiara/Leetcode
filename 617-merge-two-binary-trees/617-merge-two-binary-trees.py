@@ -20,10 +20,10 @@ class Solution:
             return  root2
         if root2 == None:
             return root1
-        if  not root1:
+        if  not root1 and not root2:
             return None
-        if not root2:
-            return None
+        # if not root2:
+        #     return None
         #create root3
         root3 = TreeNode(root1.val + root2.val)
         root3.left = self.mergeTrees(root1.left, root2.left)
