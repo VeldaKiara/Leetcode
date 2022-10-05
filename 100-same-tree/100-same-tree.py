@@ -3,7 +3,8 @@
 #     def __init__(self, val=0, left=None, right=None):
 #         self.val = val
 #         self.left = left
-#         self.right = right
+#         self.right = right 
+# O(n) time 
 '''
 recurse the node, back track and check if nodes are equal, return true 
 '''
@@ -17,7 +18,8 @@ class Solution:
             return False
         if p.val != q.val:
             return False
-        return self.isSameTree(p.right, q.right) and self.isSameTree(p.left, q.left)
+        return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right) 
+        
             
         
                 
