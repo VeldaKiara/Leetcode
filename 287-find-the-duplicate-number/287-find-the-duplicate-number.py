@@ -1,22 +1,22 @@
 class Solution:
-    # def findDuplicate(self, nums: List[int]) -> int:
-    #     store = set()
-    #     for i in nums:
-    #         if i in store:
-    #             return i
-    #         store.add(i)
-    
     def findDuplicate(self, nums: List[int]) -> int:
-        back = 0
-        front = 1
-        n = len(nums)
-        nums.sort()
-        while front <= n-1:
-            if nums[back] == nums[front]:
-                return nums[back]
-            else:
-                back += 1
-                front += 1
+        store = set()
+        for i in nums:
+            if i in store:
+                return i
+            store.add(i)
+    
+#     def findDuplicate(self, nums: List[int]) -> int:
+#         back = 0
+#         front = 1
+#         n = len(nums)
+#         nums.sort()
+#         while front <= n-1:
+#             if nums[back] == nums[front]:
+#                 return nums[back]
+#             else:
+#                 back += 1
+#                 front += 1
 #         if len(nums) <= 1:
 #             return False
 
