@@ -1,23 +1,6 @@
 '''
-func getSum(a int, b int) int {
-    
-    for b != 0 {
-        carry := a & b
-        fmt.Println(carry)
-        a = a ^ b
-        b = carry << 1
-    }
-    return a
-}
+https://leetcode.com/problems/sum-of-two-integers/discuss/489210/Read-this-if-you-want-to-learn-about-masks
 '''
-# class Solution:
-#     def getSum(self, a: int, b: int) -> int:
-#         while b != 0:
-#             addition = a & b
-#             a = a ^ b
-#             b = addition << 1
-#         return a   
-    
 class Solution:
     def getSum(self, a: int, b: int) -> int:
         
